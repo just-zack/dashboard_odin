@@ -87,7 +87,6 @@ body {
     height: 50px;
     width: 50px;
     border-radius: 30px;
-    border: solid black 1px;
     align-self: center;
 }
 
@@ -103,7 +102,6 @@ body {
     height: 80px;
     width: 80px;
     border-radius: 40px;
-    border: solid black 2px;
     margin: 10px;
 }
 
