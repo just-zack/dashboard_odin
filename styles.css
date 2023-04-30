@@ -126,7 +126,7 @@ body {
     grid-row: 2/3;
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 450px;
     margin: 30px 15px 30px 15px;
     gap: 15px;
 }
