@@ -169,6 +169,60 @@ body {
     background-color: #FCA311;
     border: solid black 1px;
 }
+
+#announcements {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#announcement_panel {
+    flex: 1;
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 1/3;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    background-color: var(--secondary_color);
+    border-radius: 10px;
+    font-size: 0.8rem;
+    padding: 15px;
+}
+
+.announcement_card {
+    padding: 10px;
+    border-bottom: solid black 1px;
+}
+#trending {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#trending_panel {
+    display:flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 2/3;
+    flex-direction: column;
+    border-radius: 10px;
+    gap: 15px;
+    background-color: var(--secondary_color);
+}
+
+.profile_card {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    gap: 15px;
+}
+.profile_image {
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
 #footer {
     grid-column: 1/3;
     background-color: #001524;
