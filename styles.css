@@ -3,6 +3,7 @@
     padding: 0;
     --main_font: 'Roboto', sans-serif;
     --spacing_standard: 30px;
+    --main_color: #FCA311;
     --secondary_color: white;
     font-family: var(--main_font);
 }
@@ -15,17 +16,35 @@ body {
 
 #sidebar {
     grid-row: 1/3;
-    background-color: #FCA311;
+    display: grid;
+    gap: 50px;
+    grid-template-rows: 100px 1fr;
+    padding: var(--spacing_standard);
+    background-color: var(--main_color);
 }
 
 #logo {
     width: 200px;
+    justify-self: center;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #14213D;
+    align-items: start;
+    list-style-type: none;
 }
 
 #profile_bar {
     grid-column: 2/3;
     display: grid;
     grid-template-rows: 1.5fr 2fr;
+    padding-left: var(--spacing_standard);
+    padding-right: var(--spacing_standard);
     background-color: var(--secondary_color);
     box-shadow: 0 10px 20px grey;
 }
@@ -36,14 +55,16 @@ body {
     justify-content: center;
     background-color: var(--secondary_color);
 }
+#search {
+    align-self: center;
+}
 
 #search_bar {
-    min-width: clamp(50px, 40%, 400px);
-    height: 20px;
+    min-width: clamp(50px, 50%, 600px);
+    height: 25px;
     align-self: center;
     border-radius: 30px;
-    margin-left: var(--spacing_standard);
-    border: black solid 2px;
+    margin-left: 10px;
     background-color: #E5E5E5;
 }
 
@@ -54,16 +75,12 @@ body {
 
 #profile_container {
     align-self: center;
-    margin-right: var(--spacing_standard);
     display: flex;
     gap: 20px;
 }
 
 #notification_icon {
-    height: 30px;
-    width: 30px;
     align-self: center;
-    background-color: black;
 }
 
 #profile_icon {
@@ -80,8 +97,6 @@ body {
 
 #creation_new {
     display: flex;
-    margin-left: var(--spacing_standard);
-    margin-right: var(--spacing_standard);
 }
 
 #large_profile {
