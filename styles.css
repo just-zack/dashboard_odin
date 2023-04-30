@@ -184,6 +184,7 @@ body {
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
     background-color: var(--secondary_color);
+    box-shadow: 2px 5px 10px grey;
     border-radius: 10px;
     font-size: 0.8rem;
     padding: 15px;
@@ -210,13 +211,14 @@ body {
     border-radius: 10px;
     gap: 15px;
     background-color: var(--secondary_color);
+    box-shadow: 2px 5px 10px grey;
 }
 
 .profile_card {
     display: flex;
     justify-content: space-around;
     padding: 15px;
-    gap: 15px;
+    gap: 10px;
 }
 .profile_image {
     width: 50px;
